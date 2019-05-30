@@ -30,9 +30,8 @@ public class ProductController {
 	public Product createProduct(@Valid @RequestBody Product p) {
 		
 		 return productDAO.save(p);
+		 
 	}
-	
-	
 	
 	
 	//get all products

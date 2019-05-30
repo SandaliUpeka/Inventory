@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/jquery-3.4.0.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="container" align="center">
+ 
+<form class="form-horizontal" id="addProductForm" style="margin-top:40px" method="Post" action="saveProducts">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="id"></label>
+    <div class="col-sm-4">
+      <input type="hidden" class="form-control" id="id" name="id" value="0">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="name">Product Name:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="name" placeholder="Enter Product Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="brand">Brand Name:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="brand" placeholder="Enter Brand Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="code">Code:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="code" placeholder="Enter Code">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="unitPrice">Price:</label>
+    <div class="col-sm-4"> 
+      <input type="text" class="form-control" id="unitPrice" placeholder="Enter price">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="quantity">Quantity:</label>
+    <div class="col-sm-4"> 
+      <input type="text" class="form-control" id="quantity" placeholder="Enter quantity">
+    </div>
+  </div>
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-4">
+      <button id="btnSave" type="submit" class="btn btn-primary">Submit</button>
+    </div >
+    <div class="col-sm-4">
+      <button  class="btn btn-primary" id="btnRefresh" type="button" name="btnRefresh">Refresh</button>
+    </div>
+  </div>
+  
+  <div id="divstsMsgItem"></div>
+  
+</form>
+
+
+<div class="col-sm-7" style="margin: 20px 0px 20px 0px">
+		<button id="getalusers" type="button" class="btn btn-primary">Get All Products</button>
+		<div id="getResultDiv" style="padding: 20px 10px 20px 50px">
+			<ul class="list-group">
+			</ul>
+		</div>
+</div>
+
+
+</div>
+</div>
+
+
+</body>
+</html>
